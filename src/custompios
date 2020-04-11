@@ -42,6 +42,8 @@ function execute_chroot_script() {
   
   ls -l 
   pwd
+  ls /usr/bin
+  which qemu-arm-static
 
   if [ "$(arch)" != "armv7l" ] && [ "$(arch)" != "aarch64" ] && [ "$(arch)" != "arm64" ] ; then
     if [ "$BASE_ARCH" == "armv7l" ]; then
