@@ -50,6 +50,8 @@ function execute_chroot_script() {
     fi
   else
     echo "Building on ARM device a armv7l/aarch64/arm64 system, not using qemu"
+    ls .
+    pwd
     chroot . /bin/bash /chroot_script
   fi
   
